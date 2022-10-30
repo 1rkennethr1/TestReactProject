@@ -1,26 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from '@mui/material';
+import MediaCard from './components/MediaCard';
+import MyProps from './components/props';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <MediaCard />
+        <MyProps name = "Romel Kenneth Recabo" role = "Initiator" pr = "Divine/Immortal" age = {21} sex = "Male"/>
+        <Button variant = 'contained'>Invoke</Button>
       </header>
     </div>
   );
 }
-
 export default App;
